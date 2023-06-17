@@ -1,4 +1,5 @@
-const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z\d]).{6,8}$/
+const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z\d])(?=(.*[^a-zA-Z\d]){2}).{6,8}$/;
+
 
 function validarSenha() {
   const senha = document.getElementById("senha").value;
